@@ -22,6 +22,8 @@ public class testAUtore {
 		}
 		
 		
-		lis.setLibri(new Libro ("Pippo", 2018));
+		
+		
+	
 	}
 }

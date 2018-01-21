@@ -45,9 +45,11 @@ public class AutoreLista {
 		return libri;
 	}
 
-	public void setLibri(Libro libro) {
+	public void setLibri(LibriLista libri) {
 		this.libri = libri;
 	}
+
+
 	
 	
 	

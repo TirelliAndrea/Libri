@@ -5,24 +5,53 @@ import java.util.List;
 
 public class AutoreLista {
 	
-	private List<Autore> autori = new ArrayList<Autore>();;
+
+
+	private List<Autore> autori;
+	private LibriLista libri;
+	
+	public AutoreLista (){
+		
+		autori = new ArrayList<Autore>();
+		this.libri = new LibriLista();
+	}
 
 	/**
 	 * funzione per inserire un nuovo elemento nella lista autore
 	 * @param a Autore
-	 * @return false se l'elemento autore non è presente nella lista altrimenti restituisce false e aggiung l'elemento
+	 * @return 0 se l'elemento autore non è presente nella lista  e aggiunge l'elemento altrimenti restituisce 1
 	 */
-	public boolean aggiungiAutore (Autore a){
+	public int aggiungiAutore (Autore a){
 		
-		if (!autori.contains(a)){
-		autori.add(a);
-		return false;
+		
+		if (autori.contains(a)){
+			return 1;
 		}else {
-			return true;
+			autori.add(a);
+			return 0;
 		}
 	}
 	
+	/**
+	 * 
+	 * @return la lista completa egli autori presente nella lista
+	 */
 	public List<Autore> getListaAutori (){
 		return autori;
+		
 	}
+
+	public LibriLista getLibri() {
+		return libri;
+	}
+
+	public void setLibri(Libro libro) {
+		this.libri = libri;
+	}
+	
+	
+	
+	
+	
+	
 }

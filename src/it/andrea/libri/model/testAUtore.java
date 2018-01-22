@@ -17,13 +17,21 @@ public class testAUtore {
 		}
 		
 		
-		for (int i = 0; i<lis.getListaAutori().size(); i++){
-			System.out.println(lis.getListaAutori().get(i).getCognome());
+		Autore c = new Autore("Tirelli","Gabriele",2013, "Segrate");
+		int q = lis.aggiungiAutore(c);
+		if (q == 1){
+			System.out.println("Elemento gia presente");
+		}else {
+			System.out.println("Elemento inserito");
 		}
 		
+		for (Autore auto : lis.getListaAutori()){
+			System.out.println(auto.toString());
+		}
 		
+		lis.getLibri().aggiungiLibro(new Libro ("Mio Libro",2018));
 		
-		
-	
+		for (Libro libri : lis.getLibri().getLibri())
+			System.out.println(libri.toString());
 	}
 }

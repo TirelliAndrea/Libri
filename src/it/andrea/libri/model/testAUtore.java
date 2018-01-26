@@ -6,32 +6,30 @@ public class testAUtore {
 		Autore a = new Autore("Tirelli","Andrea",1973, "Milano");
 		Autore b = new Autore("Tirelli","Andrea",1973, "Milano");
 		AutoreLista lis = new AutoreLista();
-		int t = lis.aggiungiAutore(a);
-		if (t == 1){
-			System.out.println("Elemento gia presente");
-		}
+		AutoreLista lis2 = new AutoreLista();
 		
-		int p = lis.aggiungiAutore(b);
-		if (p == 1){
+		lis.aggiungiAutore(a);
+
+		try{
+		lis.aggiungiAutore(b);
+		}catch (IllegalArgumentException e){
 			System.out.println("Elemento gia presente");
 		}
 		
 		
 		Autore c = new Autore("Tirelli","Gabriele",2013, "Segrate");
-		int q = lis.aggiungiAutore(c);
-		if (q == 1){
-			System.out.println("Elemento gia presente");
-		}else {
-			System.out.println("Elemento inserito");
-		}
+		lis2.aggiungiAutore(c);
+	
 		
 		for (Autore auto : lis.getListaAutori()){
 			System.out.println(auto.toString());
 		}
 		
 		lis.getLibri().aggiungiLibro(new Libro ("Mio Libro",2018));
+		lis.getLibri().aggiungiLibro(new Libro ("Mio Libro 2",2018));
+		lis.getLibri().aggiungiLibro(new Libro ("Mio Libro 3 ",2018));
+		lis2.getLibri().aggiungiLibro(new Libro ("Mio Libro 4",2018));
 		
-		for (Libro libri : lis.getLibri().getLibri())
-			System.out.println(libri.toString());
+
 	}
 }

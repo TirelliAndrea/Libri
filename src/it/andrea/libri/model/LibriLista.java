@@ -18,20 +18,19 @@ public class LibriLista {
 	 * @param Libro
 	 * @return 0 se l'elemento non è nella lista 1 se è presente
 	 */
-	public int aggiungiLibro (Libro a){
+	public void aggiungiLibro (Libro a){
 			
 			
-			if (libri.contains(a)){
-				return 1;
-			}else {
+			if (!libri.contains(a)){
 				libri.add(a);
-				return 0;
+			}else {
+			 throw new IllegalArgumentException("Elemento Gia presente");
 			}
 		}
 
 
 	
-	public List<Libro> getLibri() {
+	public List<Libro> getListaLibri() {
 		return libri;
 	}
 

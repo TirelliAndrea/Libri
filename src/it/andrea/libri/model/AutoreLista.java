@@ -21,14 +21,13 @@ public class AutoreLista {
 	 * @param a Autore
 	 * @return 0 se l'elemento autore non è presente nella lista  e aggiunge l'elemento altrimenti restituisce 1
 	 */
-	public int aggiungiAutore (Autore a){
+	public void aggiungiAutore (Autore a){
 		
 		
-		if (autori.contains(a)){
-			return 1;
-		}else {
+		if (!autori.contains(a)){
 			autori.add(a);
-			return 0;
+		}else {
+			throw new IllegalArgumentException();
 		}
 	}
 	
@@ -45,17 +44,7 @@ public class AutoreLista {
 		return libri;
 	}
 
-	public void setLibri(LibriLista libri) {
-		this.libri = libri;
-	}
 
 
 
-
-	
-	
-	
-	
-	
-	
 }

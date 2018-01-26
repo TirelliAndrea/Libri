@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="it.andrea.libri.model.AutoreLista" project="Libri" 
     file="/Libri/src/it/andrea/libri/model/AutoreLista.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="570" y="109"/>    
+    <position height="-1" width="-1" x="404" y="103"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="it.andrea.libri.model.LibriLista" project="Libri" 
     file="/Libri/src/it/andrea/libri/model/LibriLista.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="187" y="244"/>    
+    <position height="-1" width="-1" x="344" y="276"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="it.andrea.libri.model.testAUtore" project="Libri" 
     file="/Libri/src/it/andrea/libri/model/testAUtore.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="772" y="82"/>    
+    <position height="-1" width="-1" x="606" y="85"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="it.andrea.libri.model.Libro" project="Libri" 
     file="/Libri/src/it/andrea/libri/model/Libro.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="331" y="538"/>    
+    <position height="-1" width="-1" x="312" y="569"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="it.andrea.libri.model.Autore" project="Libri" 
     file="/Libri/src/it/andrea/libri/model/Autore.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="737" y="408"/>    
+    <position height="-1" width="-1" x="663" y="420"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,18 +48,18 @@
   </class>  
   <association id="6">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="7" name="libri"/>      
-      <multiplicity id="8" minimum="0" maximum="1"/>    
+      <attribute id="7" name="autori"/>      
+      <multiplicity id="8" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="9">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="autori"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+      <attribute id="10" name="libri"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="12">    

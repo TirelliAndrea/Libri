@@ -3,6 +3,8 @@ package it.andrea.libri.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import it.andrea.libri.beans.Autore;
+
 public class AutoreLista {
 	
 

@@ -1,5 +1,8 @@
 package it.andrea.libri.model;
 
+import it.andrea.libri.beans.Autore;
+import it.andrea.libri.beans.Libro;
+
 public class testAUtore {
 
 	public static void main(String[] args) {

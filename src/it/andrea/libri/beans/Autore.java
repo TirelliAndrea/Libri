@@ -1,4 +1,4 @@
-package it.andrea.libri.model;
+package it.andrea.libri.beans;
 
 public class Autore {
 	
